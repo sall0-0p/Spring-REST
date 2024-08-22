@@ -1,7 +1,7 @@
 package com.restdemo.restdemo.note;
 
 public class Note {
-    private String id;
+    private final String id;
     private String content;
 
     public Note(String content) {

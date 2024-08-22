@@ -15,6 +15,11 @@ public class ApiController {
         return NoteManager.getNote(id);
     }
 
+    @GetMapping("/note/{id}/content")
+    public String getContant(@PathVariable String id) {
+        return NoteManager.getNote(id).getContent();
+    }
+
     @GetMapping("/notes")
     public List<Note> getNotes() {
         return NoteManager.getAllNotes();

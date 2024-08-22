@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 public class NoteManager {
-    private static Map<String, Note> notes = new HashMap<>();
+    private static final Map<String, Note> notes = new HashMap<>();
 
     public static String addNote(String content) {
         Note newNote = new Note(content);
